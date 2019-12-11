@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About the Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+        
+        body {
+            font-size: 14px;
+            color: white;
+            background-color: #1a0000;
+            background-image: url("https://media.giphy.com/media/jn2iXu2HRpMuovBrrV/giphy.gif");
+            height: 80%;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: 350px;
+        }
+        
+        h3 {
+            font-weight: 900;
+            font-size: 20px;
+            color: orange;
+        }
+        
+        .menuSize {
+            float: left;
+            color: #e0ebeb;
+            width: 50%;
+        }
+        
+        .menuMeat {
+            float: right;
+            color: #e0ebeb;
+            width: 50%;
+        }
+        
+        .menuCheese {
+            float: left;
+            color: #e0ebeb;
+            width: 50%;
+        }
+        
+        .menuCrust {
+            float: right;
+            color: #e0ebeb;
+            width: 50%;
+        }
+        
+        .menuSauce {
+            float: left;
+            color: #e0ebeb;
+            width: 50%;
+        }
+        
+        .menuVeggies {
+            float: right;
+            color: #e0ebeb;
+            width: 50%;
+        }
+        
+        .button {
+            color: blue;
+        }
+        
+        .bottom {
+            height: 1000px;
+        }
+        
+        .cart {
+            border: 0vmax;
+        }
+        
+        #menuBG {
+            color: aliceblue;
+        }
+        
+        #sizeText {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+            border: 3px solid maroon;
+            background-color: black;
+        }
+        
+        #meatText {
+            margin: auto;
+            width: 50%;
+            border: 3px solid maroon;
+            background-color: black;
+            padding: 10px;
+        }
+        
+        #cheeseText {
+            margin: auto;
+            width: 50%;
+            border: 3px solid maroon;
+            background-color: black;
+            padding: 10px;
+        }
+        
+        #crustText {
+            margin: auto;
+            width: 50%;
+            border: 3px solid maroon;
+            background-color: black;
+            padding: 10px;
+        }
+        
+        #sauceText {
+            margin: auto;
+            width: 50%;
+            border: 3px solid maroon;
+            background-color: black;
+            padding: 10px;
+        }
+        
+        #veggiesText {
+            margin: auto;
+            width: 50%;
+            border: 3px solid maroon;
+            background-color: black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Home</li>
+        /
+        <li>Contact</li>
+        /
+        <li>About</li>
+    </ul>
+
+
+    <div id="menuBG">
+        <form id="frmMenu">
+            <div class="cart">
+                <div id="showText"></div>
+                <div id="totalPrice"></div>
+            </div>
+
+
+
+            <div class="menuSize">
+                <h3>Size:</h3>
+                <div id="sizeText" ;>
+                    <input class="size" type="radio" name="Size" value="Personal Pizza"> Personal Pizza<br>
+                    <input class="size" type="radio" name="Size" value="Medium Pizza"> Medium Pizza<br>
+                    <input class="size" type="radio" name="Size" value="Large Pizza" checked> Large Pizza<br>
+                    <input class="size" type="radio" name="Size" value="Extra Large Pizza"> Extra Large Pizza<br>
+                </div>
+            </div>
+
+
+
+            <div class="menuMeat">
+                <h3>Meats:</h3>
+                <div id="meatText" ;>
+                    <input class="meats" type="checkbox" name="Meat" value="Pepperoni"> Pepperoni<br>
+                    <input class="meats" type="checkbox" name="Meat" value="Sausage"> Sausage <br>
+                    <input class="meats" type="checkbox" name="Meat" value="Canadian Bacon"> Canadian Bacon<br>
+                    <input class="meats" type="checkbox" name="Meat" value="Ground Beef"> Ground Beef<br>
+                    <input class="meats" type="checkbox" name="Meat" value="Anchovy"> Anchovy<br>
+                    <input class="meats" type="checkbox" name="Meat" value="Chicken"> Chicken<br>
+                </div>
+            </div>
+
+
+
+            <div class="menuCheese">
+                <h3>Cheese:</h3>
+                <div id="cheeseText" ;>
+                    <input class="cheese" type="radio" name="Cheese" value="Regular" checked>Regular<br>
+                    <input class="cheese" type="radio" name="Cheese" value="No Cheese"> No Cheese<br>
+                    <input class="cheese" type="radio" name="Cheese" value="Extra Cheese"> Extra Cheese<br>
+                </div>
+            </div>
+
+            <div class="menuCrust">
+                <h3>Crust:</h3>
+                <div id="crustText" ;>
+                    <input class="crust" type="radio" name="Crust" value="Plain Crust" checked>Plain Crust<br>
+                    <input class="crust" type="radio" name="Crust" value="Garlic Butter Crust"> Garlic Butter Crust<br>
+                    <input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust"> Cheese Stuffed Crust<br>
+                    <input class="crust" type="radio" name="Crust" value="Spicy Crust"> Spicy Crust<br>
+                    <input class="crust" type="radio" name="Crust" value="House Special Crust"> House Special Crust<br>
+                </div>
+            </div>
+
+            <div class="menuSauce">
+
+                <h3>Sauce:</h3>
+
+                <div id="sauceText" ;>
+                    <input class="sauce" type="radio" name="Sauce" value="Marinara sauce" checked>Marinara sauce<br>
+                    <input class="sauce" type="radio" name="Sauce" value="White sauce"> White sauce<br>
+                    <input class="sauce" type="radio" name="Sauce" value="Barbeque sauce">Barbeque sauce<br>
+                    <input class="sauce" type="radio" name="Sauce" value="No Sauce">No Sauce<br>
+                </div>
+            </div>
+
+
+
+            <div class="menuVeggies">
+
+                <h3>Veggies:</h3>
+
+                <div id="veggiesText" ;>
+                    <input class="veggies" type="checkbox" name="Veggies" value="Tomatoes"> Tomatoes<br>
+                    <input class="veggies" type="checkbox" name="Veggies" value=" Onions"> Onions <br>
+                    <input class="veggies" type="checkbox" name="Veggies" value="Olives"> Olives<br>
+                    <input class="veggies" type="checkbox" name="Veggies" value="Green Peppers"> Green Peppers<br>
+                    <input class="veggies" type="checkbox" name="Veggies" value="Mushrooms"> Mushrooms<br>
+                    <input class="veggies" type="checkbox" name="Veggies" value="Pineapple"> Pineapple<br>
+                    <input class="veggies" type="checkbox" name="Veggies" value="Spinach"> Spinach<br>
+                    <input class="veggies" type="checkbox" name="Veggies" value="Jalapeno"> Jalapeno<br>
+                </div>
+            </div>
+
+            <div class=" bottom">
+                <p>
+                </p>
+            </div>
+
+
+        </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
