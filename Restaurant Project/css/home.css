@@ -1,0 +1,28 @@
+html {
+    background-color: maroon;
+    color:white;   
+}
+
+h1 {
+    font-family: fantasy;
+    font-size: 5em;
+    text-shadow: 1px 1px 2px black;
+
+}
+
+navbar ul {
+             
+    border: 2px solid orange;
+    width:auto;
+    height: auto;
+    display:flex;
+    justify-content: center;
+
+}
+
+navbar li {
+    list-style: none;
+    font-size: 2em;
+    display:inline;
+    margin: 0px 40px;
+}
